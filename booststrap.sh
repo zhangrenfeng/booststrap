@@ -2,9 +2,9 @@
 # Program:
 #
 # History:
-#       2018/12/26      renfeng.zhang 0.1.0
+#       2018/12/26  renfeng.zhang   0.1.0
 # Usage:
-#
+#       curl https://raw.githubusercontent.com/zhangrenfeng/booststrap/master/booststrap.sh | sh
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export $PATH
 
