@@ -173,7 +173,7 @@ ln -s ~/.bootstrap/zsh-config/ssh_config ~/.ssh/config
 ./install-steps/personal.sh
 ./personal.sh
 
-curl -fsSL https://raw.githubusercontent.com/zhangrenfeng/aptkit/master/git/install.sh | sh
+# curl -fsSL https://raw.githubusercontent.com/zhangrenfeng/aptkit/master/git/install.sh | sh
 
 echo -e ${GREEN}"================================= done ==========================================="${CLOSE}
 echo ""
