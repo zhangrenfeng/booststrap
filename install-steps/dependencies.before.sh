@@ -16,4 +16,4 @@ else
 fi
 
 # code runner
-brew cask install coderunner
+brew install coderunner --cask

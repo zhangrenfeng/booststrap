@@ -4,7 +4,7 @@ username="renfeng.zhang"
 
 # write script you want to use in the 'if' block
 if [[ "$username" == "$(whoami)" ]]; then
-    brew cask install google-drive-file-stream
+    brew install google-drive-file-stream --cask
 
     # git config
     git config --global user.name "renfeng.zhang"

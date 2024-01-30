@@ -4,7 +4,8 @@
 #   2018/12/27  renfeng.zhang   0.1.0
 
 # 引入echo颜色输出控制
-source colorful.sh
+
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 # 使用brew安装软件
 function brew_install()

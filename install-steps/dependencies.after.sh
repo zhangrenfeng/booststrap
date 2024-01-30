@@ -7,7 +7,7 @@ source helper.sh
 
 # 安装搜狗输入法
 echo_green "Install sogouinput ... "
-brew cask install sogouinput
+brew install sogouinput --cask
 sogou_base="/usr/local/Caskroom/sogouinput"
 sogou_version="$sogou_base/"`ls "$sogou_base"`
 sogou_app="$sogou_version/"`ls $sogou_version | grep .app | tail -n 1`
@@ -25,11 +25,11 @@ open "$sogou_app"
 #   7. qlvideo 预览更多格式的视频文件
 #   8. provisionql 预览 .app 或者 .ipa后缀的程序
 echo_green "Install quick look plugins ... "
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook provisionql
-brew cask install --appdir='/usr/local/bin' qlimagesize qlvideo
+brew install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook provisionql --cask
+brew install --appdir='/usr/local/bin' qlimagesize qlvideo --cask
 
 # 安装解压工具
-brew cask install the-unarchiver
+brew install the-unarchiver --cask
 
 # 1. 安装 Charles
 echo_green "Install charles ... "
@@ -73,7 +73,7 @@ else
     fi
 
     # patch
-    brew cask install alfred
+    brew install alfred --cask
     sudo codesign -f -d -s - "/Applications/Alfred 3.app/Contents/Frameworks/Alfred Framework.framework/Versions/A/Alfred Framework"
     cp ~/.bootstrap/tools/alfred.license.plist "$HOME/Library/Application Support/Alfred 3/license.plist"
 

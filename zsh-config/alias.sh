@@ -16,7 +16,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles -bool true &&
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 alias ppjson='python $ZRF_ZSH_TOOLS/json_pretty.py'
 
-alias pi='pod install'
+alias pi='pod install --verbose'
 alias pu='pod update'
 
 alias vim='nvim'

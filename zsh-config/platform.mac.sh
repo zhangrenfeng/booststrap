@@ -1,4 +1,4 @@
-source "$HOME/.bootstrap/colorful.sh"
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 alias o='open'
 alias oo='open .'

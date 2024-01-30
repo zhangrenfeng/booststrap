@@ -1,4 +1,4 @@
-source "$HOME/.bootstrap/colorful.sh"
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 function epurlencode()
 {

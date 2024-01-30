@@ -16,7 +16,7 @@
 # Reference:
 #   https://github.com/huyng/bashmarks/blob/master/bashmarks.sh
 
-source "$HOME/.bootstrap/colorful.sh"
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 # setup file to store bookmarks
 if [[ ! -n "$SAVEDIRS" ]]; then

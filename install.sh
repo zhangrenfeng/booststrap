@@ -19,7 +19,7 @@ sudo ./install-steps/macos.sh
 # 安装 iTerm2
 if [[ ! -e "/Applications/iTerm.app" ]]; then
     echo_green "Install iTerm2 ... "
-    brew cask install iterm2
+    brew install iterm2 --cask
     defaults delete com.googlecode.iterm2
     cp config/com.googlecode.iterm2.plist $HOME/Library/Preferences
     command="set :New\ Bookmarks:0:Background\ Image\ Location /Users/""$(whoami)""/.booststrap/assets/iTerm2-background.jpg"
@@ -30,17 +30,17 @@ else
 fi
 
 # 安装 SourceTree
-if [[ ! -e "/Applications/SourceTree.app" ]]; then
-    echo_green "Install SourceTree ..."
-    brew cask install sourcetree
-else
-    echo_blue "You have installed SourceTree"
-fi
+# if [[ ! -e "/Applications/SourceTree.app" ]]; then
+#     echo_green "Install SourceTree ..."
+#     brew install sourcetree --cask
+# else
+#     echo_blue "You have installed SourceTree"
+# fi
 
 # 安装微信
 if [[ ! -e "/Applications/WeChat.app" ]]; then
     echo_green "Install WeChat ..."
-    brew cask install wechat
+    brew install wechat --cask
 else
     echo_blue "You have installed WeChat"
 fi
@@ -48,7 +48,7 @@ fi
 # 安装Chrome
 if [[ ! -e "/Applications/Google Chrome.app" ]]; then
     echo_green "Install google chrome ..."
-    brew cask install google-chrome
+    brew install google-chrome --cask
 
     echo_green "Set chrome as default browser"
     git clone https://github.com/kerma/defaultbrowser ./tools/defaultbrowser
@@ -61,7 +61,7 @@ fi
 # 安装 VSCode
 if [[ ! -e "/Applications/Visual Studio Code.app" ]]; then
     echo_green "Install Visual Studio Code ..."
-    brew cask install visual-studio-code
+    brew install visual-studio-code --cask
     sh ./vscode/setup.sh
 else
     echo_blue "You have installed vscode"

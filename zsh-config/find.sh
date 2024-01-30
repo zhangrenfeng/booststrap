@@ -1,5 +1,5 @@
 # 此处只是为了在本地测试而注释
-source "$HOME/.bootstrap/colorful.sh"
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 # 通过名称来查找文件
 function fn()

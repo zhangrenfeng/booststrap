@@ -1,4 +1,4 @@
-source "$HOME/.bootstrap/colorful.sh"
+source "/Users/bytedance/people/booststrap/colorful.sh"
 
 # git add系列别名
 alias ga='git add'
@@ -74,6 +74,20 @@ function gom()
     done
 }
 
+# git push 远程分支
+function gpush()
+{
+    branch=$(git symbolic-ref --short -q HEAD)
+    git push origin $branch
+}
+
+# git pull 远程分支
+function gpull()
+{
+    branch=$(git symbolic-ref --short -q HEAD)
+    git pull origin $branch --rebase
+}
+
 # git add 所有新增的文件
 function git_add_new_files()
 {
@@ -142,5 +156,9 @@ _fzf_complete_gbdr()
 gbdr()
 {
     git push origin :$1
+}
+
+function when {
+    ts '[%H:%M:%.S]'
 }
 
